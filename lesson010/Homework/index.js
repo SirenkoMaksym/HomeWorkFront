@@ -9,3 +9,4 @@ console.log(isHuman)
 
 let myNumber1 = parseInt('123smth')
 console.log(myNumber1)
+
