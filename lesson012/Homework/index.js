@@ -11,7 +11,7 @@ const unserFunction = (array, number) => {
 
 }
 
-console.log(unserFunction(neuArray, 5))
+console.log(unserFunction(neuArray, 4))
 
 console.log("==================================")
 
@@ -59,8 +59,10 @@ const myArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 let sum =0
 const sumNumbers = (array) => {
     let i=0
+    let anshwer = "Числа: "
     while (i < array.length){
         sum = sum+array[i]
+anshwer=
         i++
     }
     return `Ожидаемый результат: "Числа: ${array}. Сумма: ${sum}."`
