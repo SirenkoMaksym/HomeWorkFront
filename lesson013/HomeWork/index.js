@@ -91,3 +91,38 @@ const printProductDetails = (productInfo) =>{
     return `${productInfo.name} - ${productInfo.price}, товар на складе: НЕТ`
 }
 console.log(printProductDetails(productInfo))
+
+// Задание 2
+// Создайте функцию compareObjects, которая принимает два объекта в качестве аргументов и проверяет их на равенство (все ключи и значения должны быть одинаковыми). Верните true, если объекты равны, и false в противном случае.
+console.log("================================")
+const alice = { name: 'Alice', age: 30 }
+const alice1 = { name: 'Alice', age: 30 }
+
+const compareObjects1 = (obj1, obj2) => {
+  let keys1 = Object.keys(obj1)
+  let keys2 = Object.keys(obj2)
+
+  // проверяем что длина равна
+  if (keys1.length !== keys2.length) {
+    return false
+  }
+
+  // проверяем что ключи равны
+  for (i = 0; i < keys1.length; i++) {
+    if (keys1[i] !== keys2[i]) {
+      return false
+    }
+  }
+
+  // мы проверяем значения по ключам
+  for (let key of keys1) {
+    if (obj1[key] !== obj2[key]) {
+      return false
+    }
+  }
+
+  // если все проверки пройдены возвращаем true
+  return true
+}
+
+console.log(compareObjects1(alice, alice1))
