@@ -65,4 +65,4 @@ console.log(task6_2)
 
 // 'Anakin Skywalker is a Jedi. Age: 25' 'Han Solo is not a Jedi. Age: 35'*/
 
-starWarsHeroes.forEach(el => console.log((el.isJedi === true) ? `${el.name} is a Jedi. Age:${el.age} ` : `${el.name} is not a Jedi. Age:${el.age}`, " "))
+starWarsHeroes.forEach(el => console.log((el.isJedi) ? `${el.name} is a Jedi. Age:${el.age} ` : `${el.name} is not a Jedi. Age:${el.age}`, " "))
