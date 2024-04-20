@@ -15,7 +15,7 @@ const brothers = [
     { name: 'Frodo', height: 60, race: 'hobbit', age: 30, hasMagic: false }
   ]
   
-  let sam = { name: 'Sam', height: 62, race: 'hobbit', age: 29, hasMagic: false }
+ let sam = { name: 'Sam',  height: 62, race: 'hobbit', age: 29, hasMagic: false }
   
   brothers.unshift(sam)
   

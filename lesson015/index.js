@@ -139,3 +139,18 @@ console.log(heroes)
 const newHeroes = heroes.slice(0, -5)
 
 console.log(newHeroes)
+console.log('============================================')
+const names1 = ['Frodo', 'Sam', 'Pipin', 'Merry', 'Boromir', 'Faramir']
+
+const arrayElement = (array, elу) => {
+    const x = array.findIndex(el => el === elу)
+console.log(x)
+    if(x === -1){
+        console.log('‘no such element in array’')
+    }
+else {
+    array.splice(x,1)
+    return array
+}
+}
+console.log(arrayElement(names1, 'Pipin'))
